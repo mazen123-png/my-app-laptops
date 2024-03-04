@@ -1,0 +1,9 @@
+.form{
+    margin-top: 150px !important;
+    overflow: hidden;
+}
+@media (max-width:500px) {
+    .form .contain{
+            flex-direction: column;
+    }
+}

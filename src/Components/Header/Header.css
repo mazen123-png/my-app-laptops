@@ -1,0 +1,127 @@
+nav{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    height: 70px;
+    background-color: #484CB4; /* #174658  */
+}
+.containNavLinks{
+    display: flex; 
+}
+.nav-link:hover{
+    opacity: 100 !important;
+    transform:opacity .3s all;
+    
+}
+.nav-socialIcons{
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 20px;
+    justify-content: center;
+}
+.nav-socialIcons i{
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: 1px solid azure;
+    transition: .3s;
+}
+.nav-socialIcons i:hover{
+    background-color: azure;
+    color: #343a40;
+}
+.containLogBtns .logBtn{
+    background-color: transparent;
+    color: #fff;
+    outline: 2px solid #fff;
+    font-size: 15px;
+    letter-spacing: .7px;
+}
+.containLogBtns .logBtn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-toggler span {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 4px;
+}
+.navbar-toggler{
+    display: none;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+    nav{
+        justify-content: space-evenly !important;
+        align-items: center;
+        height: 75px;
+    }
+    .containNavLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #484CB4;
+        text-align: center;
+        padding: 15px 0 10px;
+        margin-top: 10px;
+    }
+
+    .containNavLinks.open {
+        display: flex;
+    }
+
+    .nav-socialIcons {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        z-index: 2;
+    }
+
+    .navbar-toggler.open {
+        background-color:#484CB4 /* #343a40 */;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+}
+
+/*  #484CB4   #8182C5   #4D54CC */

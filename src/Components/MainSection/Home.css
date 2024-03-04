@@ -1,0 +1,41 @@
+.HomeSection{
+    padding: 50px 50px;
+    background: #8182c5b4/* #4bafd6cb */;
+    padding-bottom: 130px;
+}
+.HomeSection img{
+    margin-right: -40px;
+}
+.HomeSection h3{
+    color: #0b4d67;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.SignupBtn{
+    background-color: #484CB4;
+    letter-spacing: .7px;
+}
+
+@media (max-width:767px) {
+    .HomeSection img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:460px) {
+    .HomeSection img{
+        width: 300px;
+        
+    }
+    .HomeSection h3{
+        font-size: 35px !important;
+        text-align: center;
+    }
+}
+@media (max-width:315px) {
+    .HomeSection{
+        overflow: hidden;
+    }
+}
