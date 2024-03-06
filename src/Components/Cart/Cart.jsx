@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 import React from 'react'
+=======
+import React, { useEffect } from 'react'
+>>>>>>> bcbcab9bd1174eb834517b16abef34d073bb4edc
 import LoggedHeader from '../LoggedHeader/LoggedHeader'
 import './Cart.css'
 import { Button, Image } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart, deleteFromCart } from '../../rtk/slices/cartSlice'
 import { useNavigate } from 'react-router-dom';
+<<<<<<< HEAD
 
+=======
+>>>>>>> bcbcab9bd1174eb834517b16abef34d073bb4edc
 const Cart = () => {
     const navg = useNavigate()
     const cart = useSelector(state => state.cart)
@@ -17,6 +24,10 @@ const Cart = () => {
     const TotalPrice = ProductsPrice + shippingPrice
     const dispatch = useDispatch()
     const HandleBuyNowClicked = () =>{
+<<<<<<< HEAD
+=======
+        
+>>>>>>> bcbcab9bd1174eb834517b16abef34d073bb4edc
         alert("payment completed successfully")
         dispatch(clearCart(cart))
         navg("../")
@@ -66,7 +77,11 @@ const Cart = () => {
                     <h5>total price: {TotalPrice}$</h5>
                 </div>
                 <div className="d-flex justify-content-right">
+<<<<<<< HEAD
                     <Button variant='success' onClick={HandleBuyNowClicked}>Make order</Button>
+=======
+                <Button variant='success'  onClick={HandleBuyNowClicked}>Make order</Button>
+>>>>>>> bcbcab9bd1174eb834517b16abef34d073bb4edc
                 </div>
             </div>
         </section>:
