@@ -1,0 +1,13 @@
+.productDetails{
+    margin-top: 150px;
+    
+}
+@media (max-width:567px) {
+    .containDetailsItem{
+        flex-direction: column;
+        gap: 73px;
+    }
+    .containDetailsItem .card{
+        width: 80% !important;
+    }
+}

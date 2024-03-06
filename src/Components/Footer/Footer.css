@@ -1,0 +1,11 @@
+footer{
+    background-color: #484CB4;
+}
+.footer{
+    height: 150px;
+}
+@media (max-width:767px) {
+    .social-icons{
+        flex-direction: row !important;
+    }
+}

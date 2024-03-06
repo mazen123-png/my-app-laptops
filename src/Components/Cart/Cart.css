@@ -1,0 +1,11 @@
+.cartSection,.CartEmpty{
+    margin-top: 50px;
+}
+.cartProducts{
+    width: 90%;
+}
+.cartDetails{
+    border: 2px solid #000;
+    border-radius: 14px;
+    padding: 20px;
+}

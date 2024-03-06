@@ -1,5 +1,5 @@
 .form{
-    margin-top: 150px !important;
+    margin-top: 150px;
     overflow: hidden;
 }
 @media (max-width:500px) {
