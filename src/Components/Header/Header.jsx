@@ -16,9 +16,7 @@ const Header = () => {
         </div>
         <div className={`containNavLinks  align-items-center justify-content-evenly ${isNavOpen ? 'open' : ''}`}>
             <div className='d-flex gap-3'>
-                <a className='nav-link text-white opacity-75' href=""></a>
-                <a className='nav-link text-white opacity-75' href="">Products</a>
-                <a className='nav-link text-white opacity-75' href=""></a>
+                <NavLink to='/products' className='nav-link text-white opacity-75'>Products</NavLink>
             </div>
             <div className='nav-socialIcons'>
                 <i className="fa-brands fa-linkedin-in" />

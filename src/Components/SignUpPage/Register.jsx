@@ -3,6 +3,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap';
 import './Register.css'
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
+import Header from '../Header/Header';
 const Register = () => {
     const navg = useNavigate()
     const [formData, setFormData] = useState({
@@ -33,9 +34,10 @@ const Register = () => {
           setErrorMessage('Email is already registered');
           return;
         }
-    
+        const userId = storedUsers.length + 1;
         // Add the new user to local storage
         const newUser = {
+          id:userId,
           firstName: formData.firstName,
           lastName: formData.lastName,
           email: formData.email,
@@ -61,7 +63,9 @@ const Register = () => {
       };
     
   return (
-    <div className="form">
+    <div>
+      <Header />
+      <div className="form">
       <Row className="justify-content-center">
         <Col md={6}>
           <Form className='d-flex flex-column gap-4' onSubmit={handleRegister}>
@@ -124,6 +128,7 @@ const Register = () => {
           </Form>
         </Col>
       </Row>
+    </div>
     </div>
   );
 };
